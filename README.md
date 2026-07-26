@@ -1,7 +1,7 @@
 # Parabank tests
 
 ## Project description
-The aim of the project is to automate functional tests for mock web based internet banking application located at [**https://parabank.parasoft.com/parabank/index.htm**](./https://parabank.parasoft.com/parabank/index.htm) using Playwright with JavaScript.
+The aim of the project is to automate functional tests for mock web based internet banking app **ParaBank** located at [**https://parabank.parasoft.com/parabank/index.htm**](./https://parabank.parasoft.com/parabank/index.htm) using Playwright with JavaScript.
 **Test data** are generated randomly via custom function and saved in json files. The code is saved in **utils** folder.
 
 Basic configuration including base URL is set in **playwright.config.js**
