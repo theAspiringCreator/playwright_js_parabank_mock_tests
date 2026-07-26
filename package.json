@@ -1,0 +1,21 @@
+{
+  "name": "parabank",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "pretest": "node utils/generate-data.js",
+    "test": "playwright test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "^22.9.0"
+  },
+  "dependencies": {
+    "playwright": "^1.49.1"
+  }
+}
