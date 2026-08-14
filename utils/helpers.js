@@ -62,3 +62,24 @@ export function getRandomSpecialChar(){
          result += characters.charAt(randomIndex);
          return result;            
 }
+
+
+/**
+* @returns amount in number type
+* @param {string} amount_string - amount entered as a string
+* @example
+* ```
+* const myAmount = convertAmount("-$15.99");
+* //possible output: -15.99
+* ```
+*/
+export function convertAmount(amount_string) {
+    //check if argument is a string 
+    if (typeof amount_string !== "string") {
+        console.log("Argument not a string");
+        return null;
+    }
+
+    // Delete $-sign & convert type to number
+    return Number(amount_string.replace("$", ""));
+  }
