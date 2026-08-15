@@ -19,8 +19,7 @@ Tests are saved in **tests** folder. The app does not retain user data for a lon
 ### Running tests via command line:
 To enable random data creation, which is loaded in file package.json, follow this steps:
 1. Navigate to **tests** directory.
-2. Run command **npm run test** * *file name including the extension* *
-   Example:    **npm run test** * *regTests.spec.js* *
+2. Run command **npm run test** *file name including the extension*, e.g.: **npm run test** *regTests.spec.js*
 
 ## User stories
 
