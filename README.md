@@ -13,29 +13,37 @@ Tests are saved in **tests** folder. The app does not retain user data for a lon
 
 ### Currently tested features:
    * Registration;
-   * Login.
+   * Login;
+   * Open account.
 
+### Running tests via command line:
+To enable random data creation, which is loaded in file package.json, follow this steps:
+1. Navigate to **tests** directory.
+2. Run command **npm run test** * *file name including the extension* *
+   Example:    **npm run test** * *regTests.spec.js* *
 
 ## User stories
 
 ### Registration
-1. As a client I want to have the opportunity to register via registration form in order to be able to use bank services.
-2. As an app administrator I want the registration form to require clients fill in all the fields mentioned in specifications expect phone number.
-3. As an app administrator I want the registration form to reject the registration if the mandatory fields are not filled in.
+1. As a client I want to register via registration form in order to be able to use bank services.
+2. As a bank clerk I want the registration form to contain mandatory fields mentioned in specifications and phone number as an optional field.
+3. As a bank clerk I want the registration form to reject the registration if the mandatory fields are not filled in.
 4. As a client I want to see an error message if I do not fill in the mandatory field so I know why my registration fail.
 5. As a client I want the mandatory fields to be marked by asterisk * so I know which of them I am expected to fill in.
 6. As a client I want to receive a message on my screen  if my registration was successful so I can securely log in and do not have to register again.
-7. As a client I want to receive a message on my screen know if my registration has failed so I know I have to try again.
-8. As an app admin I want an app to reject an attempt to submit an empty registration form and display error message instead.
-9. As an app admin I want an app to display only the error message for the data that are not supplied, so the user can supply the necessary data.
+7. As a bank clerk I want an app to reject an attempt to submit an empty registration form and display error message instead.
+
 
 ### Login
-1. As a client I want to see my account with my name after sussessful login to perform operations.
-2. As an admin I want the app to display the user the appropriate error message when:
-   * the login details are not filled in
-   * the login details do not match the ones in the database
-so the user knows why he is not allowed to enter their account and can log in again.
+1. As a bank clerk I want an app to require username and password to verify user's identity.
+2. As a client I want to see my account with my name after successful login to perform operations.
+3. As a bank clerk I want the app to display the user the appropriate error message (see specifications) when the login details are not filled in
+4. As a user I want the app to  display the appropriate error message (see specifications) when the login details are not correct so I know why I my account page is not displayed to me
   
-4. 
-5. 
-6. 
+### Open Account
+1. As a logged in client I want to be able to open a checking account.
+2. As a logged in client I want to be able to open a savings account.
+3. As a bank clerk I want an app to display a message each time a checking account is successfully created.
+4. As a bank clerk I want an app to display a message each time a savings account is successfully created.
+5. As a bank clerk I want an app to display correct account numbers, balances, amounts available, total amount and disclaimer (for text see specifications).
+   
