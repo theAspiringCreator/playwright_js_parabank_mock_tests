@@ -14,7 +14,8 @@ Tests are saved in **tests** folder. The app does not retain user data for a lon
 ### Currently tested features:
    * Registration;
    * Login;
-   * Open account.
+   * Open account;
+   * Account overview.
 
 ### Running tests via command line:
 To enable random data creation, which is loaded in file package.json, follow this steps:
@@ -45,4 +46,9 @@ To enable random data creation, which is loaded in file package.json, follow thi
 3. As a bank clerk I want an app to display a message each time a checking account is successfully created.
 4. As a bank clerk I want an app to display a message each time a savings account is successfully created.
 5. As a bank clerk I want an app to display correct account numbers, balances, amounts available, total amount and disclaimer (for text see specifications).
+
+### Account Overview
+1. As a logged in client I want to see the list of my accounts in a table listing my account numbers with the bank and current balances, amounts available separately for each account to be able to see how many accounts I have and what my financial standing is.
+2. As a logged in client I want to see the total balance to see if I am in black or red.
+3. As a bank clerk I want the app to display the disclaimer to the client so they know that some money on their accounts may be on hold.
    
